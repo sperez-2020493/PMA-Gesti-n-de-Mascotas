@@ -1,0 +1,37 @@
+{
+    "endpoints": [
+      {
+        "name": "Listar Citas de Usuario",
+        "url": "http://localhost:3001/adoptionSystem/v1/appointment/citasUsuario/:uid",
+        "method": "GET",
+        "description": "Obtiene las citas asociadas a un usuario."
+      },
+      {
+        "name": "Modificar Cita Existente",
+        "url": "http://localhost:3001/adoptionSystem/v1/appointment/modificarCita",
+        "method": "PUT",
+        "description": "Modifica una cita existente.",
+        "body": {
+          "userId": "String",
+          "appointmentId": "String",
+          "date": "String",
+          "status": "String"
+        }
+      },
+      {
+        "name": "Cancelar Cita",
+        "url": "http://localhost:3001/adoptionSystem/v1/appointment/cancelarCita/:uid",
+        "method": "PUT",
+        "description": "Cancela una cita existente."
+      },
+      {
+        "name": "Cambiar Foto de Usuario",
+        "url": "http://localhost:3001/adoptionSystem/v1/user/updateProfilePicture/:uid",
+        "method": "PATCH",
+        "description": "Actualiza la foto de perfil de un usuario.",
+        "body": {
+          "profilePicture": "File"
+        }
+      }
+    ]
+  }
