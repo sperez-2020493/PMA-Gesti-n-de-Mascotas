@@ -11,6 +11,7 @@ MONGO_URI=<tu_cadena_de_conexión_mongodb>
 PORT=<tu_puerto_del_servidor>
 JWT_SECRET=<tu_secreto_jwt>
 ```
+Recuerda tambien instalar las dependencias desde el cmd colocando este comando ( npm i )
 
 ## Endpoints de la API
 
